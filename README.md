@@ -4,7 +4,7 @@ An AI-powered medical report analyzer web application designed with the official
 
 ## Tech Stack
 - **Backend:** Flask (Python 3)
-- **Database:** SQLite
+- **Database:** MySQL
 - **Frontend:** Vanilla HTML5, CSS3, ES6 JavaScript, FontAwesome
 - **Charts:** Chart.js (via CDN)
 - **PDF Generation:** ReportLab
@@ -20,6 +20,34 @@ An AI-powered medical report analyzer web application designed with the official
    - **Download Analysis as PDF:** Automatically generates a branded medical summary PDF using `reportlab`.
    - **Voice Summary:** Interactive Web Speech TTS player.
    - **Charts & Statistics:** Reactive donut chart for severity logs.
+
+# Project Structure
+
+```text
+Dooper-AI-Medical-Report-Analyzer/
+│
+├── static/
+│   ├── css/
+│   ├── js/
+│   ├── uploads/
+│   └── images/
+│
+├── templates/
+│   ├── login.html
+│   ├── register.html
+│   ├── dashboard.html
+│   ├── history.html
+│   └── settings.html
+│
+├── uploads/
+│
+├── app.py
+├── database.py
+├── setup.py
+├── medical_analyzer.sql
+├── requirements.txt
+└── README.md
+```
 
 ## Setup Instructions
 
