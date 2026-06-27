@@ -1,58 +1,223 @@
-# Dooper AI Medical Report Analyzer
+# 🩺 Dooper AI Medical Report Analyzer
 
-An AI-powered medical report analyzer web application designed with the official **Dooper** healthcare brand theme (Red/Grey color palette, custom cards, Outfit typography) and supporting a settings panel with an appearance toggle (Light/Dark Mode).
+> 🚀 AI-powered Medical Report Analyzer built with **Flask**, **Python**, and **Dooper-inspired UI** to intelligently analyze medical reports, identify abnormal health parameters, determine severity levels, and generate easy-to-understand medical summaries.
 
-## Tech Stack
-- **Backend:** Flask (Python 3)
-- **Database:** MySQL
-- **Frontend:** Vanilla HTML5, CSS3, ES6 JavaScript, FontAwesome
-- **Charts:** Chart.js (via CDN)
-- **PDF Generation:** ReportLab
-- **PDF Parser:** PyPDF
+---
 
-## Features
-1. **Authentication Module:** Secure registration and login with input validation, password hashing (`werkzeug.security`), protected session routing, and logout.
-2. **Interactive Dashboard:** Dynamic analytics metrics showing total scans, normal scans, moderate warnings, and critical reports, alongside a Chart.js severity breakdown and report history.
-3. **AI Medical Report Analyzer:** Allows uploading PDF reports and images (PNG, JPG, JPEG). Features a rules-based NLP parser that extracts parameters (Glucose, Hemoglobin, Cholesterol, Vitamin D) and flags out-of-range metrics.
-4. **Report History:** Access previously uploaded and processed reports. Revisit complete breakdowns at any time.
-5. **Appearance Toggle:** Global Settings option allowing live toggle between light and dark modes (responsive color schemes mapped via CSS Variables).
-6. **Bonus Features Implemented:**
-   - **Download Analysis as PDF:** Automatically generates a branded medical summary PDF using `reportlab`.
-   - **Voice Summary:** Interactive Web Speech TTS player.
-   - **Charts & Statistics:** Reactive donut chart for severity logs.
+## ✨ Features
 
-## Setup Instructions
+✅ Secure User Authentication (Login & Registration)
 
-1. **Navigate to the Project Folder:**
-   ```bash
-   cd "C:\Users\Shourya Sinha\.gemini\antigravity-ide\scratch\ai_medical_report_analyzer"
-   ```
+📄 Upload Medical Reports (PDF / Images)
 
-2. **Initialize Python Virtual Environment & Activate:**
-   ```bash
-   python -m venv .venv
-   
-   # On Windows:
-   .venv\Scripts\activate
-   ```
+🤖 AI-powered Medical Report Analysis
 
-3. **Install Dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
+📊 Automatic Detection of Abnormal Parameters
 
-4. **Initialize Database & Copy Logo:**
-   Run the setup script which creates the SQLite tables and copies the official `logo.png` from the `dooper_bi_dashboard` project:
-   ```bash
-   python setup.py
-   ```
+🩺 Severity Classification (Normal • Moderate • Critical)
 
-5. **Start Flask Server:**
-   ```bash
-   python app.py
-   ```
-   The application will start running at `http://127.0.0.1:5000/`.
+📋 Smart Medical Summary Generation
 
-## Environment Variables
-The application runs with a default built-in session secret key. If deployed to production, set:
-- `FLASK_SECRET_KEY`: Custom cryptographic key for signing sessions.
+⚠ Personalized Alerts & Recommendations
+
+📂 Report History
+
+🎤 Voice Summary (Text-to-Speech)
+
+📥 Download Analysis as PDF
+
+🌙 Dark / Light Theme
+
+📱 Responsive UI (Desktop & Mobile)
+
+---
+
+# 🖥 Tech Stack
+
+### Backend
+- 🐍 Python
+- ⚡ Flask
+- 🔐 Werkzeug Authentication
+
+### Frontend
+- 🌐 HTML5
+- 🎨 CSS3
+- ⚙ JavaScript (ES6)
+- ⭐ Font Awesome
+
+### Database
+- 🗄 SQLite
+
+### Libraries
+- 📑 PyPDF
+- 📄 ReportLab
+- 📊 Chart.js
+- 🗣 Web Speech API
+
+---
+
+# 📁 Project Structure
+
+```text
+Dooper-AI-Medical-Report-Analyzer/
+│
+├── static/
+│   ├── css/
+│   ├── js/
+│   ├── uploads/
+│   └── images/
+│
+├── templates/
+│   ├── login.html
+│   ├── register.html
+│   ├── dashboard.html
+│   ├── history.html
+│   └── settings.html
+│
+├── uploads/
+│
+├── app.py
+├── database.py
+├── setup.py
+├── medical_analyzer.sql
+├── requirements.txt
+└── README.md
+```
+
+---
+
+# 🚀 Installation
+
+### 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/ai-medical-report-analyzer.git
+```
+
+### 2️⃣ Open Project
+
+```bash
+cd ai-medical-report-analyzer
+```
+
+### 3️⃣ Create Virtual Environment
+
+```bash
+python -m venv .venv
+```
+
+Windows
+
+```bash
+.venv\Scripts\activate
+```
+
+Linux / Mac
+
+```bash
+source .venv/bin/activate
+```
+
+### 4️⃣ Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 5️⃣ Initialize Database
+
+```bash
+python setup.py
+```
+
+### 6️⃣ Run Flask
+
+```bash
+python app.py
+```
+
+Open
+
+```
+http://127.0.0.1:5000
+```
+
+---
+
+# 📊 AI Workflow
+
+```text
+Upload Medical Report
+          │
+          ▼
+Extract Text (PyPDF)
+          │
+          ▼
+Analyze Medical Parameters
+          │
+          ▼
+Generate AI Summary
+          │
+          ▼
+Determine Severity
+          │
+          ▼
+Display Dashboard
+          │
+          ▼
+Save Report History
+```
+
+---
+
+# 🎯 Current Capabilities
+
+✔ Medical Summary
+
+✔ Severity Detection
+
+✔ Key Findings
+
+✔ Health Recommendations
+
+✔ PDF Export
+
+✔ Voice Summary
+
+✔ Responsive Dashboard
+
+✔ Dark Mode
+
+---
+
+# 📸 Screenshots
+
+> Add screenshots of:
+
+- 🏠 Login Page
+- 📊 Dashboard
+- 📄 Medical Analysis
+- ⚠ Alerts & Recommendations
+- 📂 Report History
+- 🌙 Dark Mode
+
+---
+
+# 🔮 Future Improvements
+
+- 🤖 Gemini AI Integration
+- 🧠 Better NLP-based Medical Interpretation
+- 📱 Android App
+- ☁ Cloud Deployment
+- 📈 Advanced Health Charts
+- 👨‍⚕ Doctor Dashboard
+
+---
+
+# 👨‍💻 Developed By
+
+**Shourya Sinha**
+
+Computer Science Engineering (Data Science)
+
+Made with ❤️ using Python & Flask.
