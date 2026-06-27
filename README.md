@@ -4,7 +4,7 @@ An AI-powered medical report analyzer web application designed with the official
 
 ## Tech Stack
 - **Backend:** Flask (Python 3)
-- **Database:** SQLite
+- **Database:** MySQL
 - **Frontend:** Vanilla HTML5, CSS3, ES6 JavaScript, FontAwesome
 - **Charts:** Chart.js (via CDN)
 - **PDF Generation:** ReportLab
