@@ -220,4 +220,4 @@ Save Report History
 
 Computer Science Engineering (Data Science)
 
-Made with ❤️ using Python & Flask.
+Made by using Python & Flask.
